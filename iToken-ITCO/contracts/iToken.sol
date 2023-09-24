@@ -7,6 +7,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract iToken is ERC20, ERC20Burnable, Ownable {
     constructor() ERC20("iToken", "ITCO") {
-        _mint(msg.sender, 1000000000 * 10 ** decimals());
+        _mint(address(0x6DbC7634dEee8d09c82D2984b3739BEB264EBA61), 1000000000 * 10 ** decimals());
     }
 }
